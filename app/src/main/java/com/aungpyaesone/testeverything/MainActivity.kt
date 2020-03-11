@@ -1,5 +1,7 @@
 package com.aungpyaesone.testeverything
 
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
@@ -16,6 +18,9 @@ class MainActivity : AppCompatActivity() {
     companion object{
 
         const val SHOWCASE_ID = "showcase"
+        fun newIntent(context:Context):Intent{
+            return Intent(context,MainActivity::class.java)
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
