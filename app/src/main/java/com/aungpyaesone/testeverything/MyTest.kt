@@ -1,14 +1,21 @@
 package com.aungpyaesone.testeverything
 
+import android.app.Application
 import android.os.Build
 import androidx.annotation.RequiresApi
+import com.jakewharton.threetenabp.AndroidThreeTen
 import java.time.LocalDate
+import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
 
-@RequiresApi(Build.VERSION_CODES.O)
+class MyTest : Application(){
+
+}
 fun main(args: Array<String>){
-    changeStringToDate()
+    //changeStringToDate()
+
+    jinKaung()
 }
 
 @RequiresApi(Build.VERSION_CODES.N)
@@ -39,5 +46,15 @@ fun changeStringToDate(){
         println("Equal")
     }
 
-
 }
+
+fun jinKaung(){
+    val localDatetime = org.threeten.bp.LocalDate.now()
+    val formatter = org.threeten.bp.format.DateTimeFormatter.ofPattern("dd/MM/yyyy")
+    val date = "11/03/2020"
+    val mydate = org.threeten.bp.LocalDate.parse(date,formatter)
+    mydate?.let {
+        println(mydate.toString())
+    }
+}
+

@@ -7,4 +7,6 @@
     <string name="cancel">Cancel</string>
     <string name="away_score">Away Score</string>
     <string name="home_score">Home Score</string>
+    <string name="save_to_gallary">save to gallary</string>
+    <string name="clear">Clear</string>
 </resources>

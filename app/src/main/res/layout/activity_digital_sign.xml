@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".digitalsignature.DigitalSignActivity">
+
+    <com.github.gcacace.signaturepad.views.SignaturePad
+        android:id="@+id/signature_pad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:penColor="@android:color/black"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_below="@id/ClearButton"
+        android:id="@+id/ClearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:text="@string/clear"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/SaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ClearButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:text="@string/save_to_gallary"/>
+
+
+</RelativeLayout>
