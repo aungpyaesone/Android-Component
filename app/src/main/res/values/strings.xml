@@ -9,4 +9,16 @@
     <string name="home_score">Home Score</string>
     <string name="save_to_gallary">save to gallary</string>
     <string name="clear">Clear</string>
+    <string name="close">Close</string>
+    <string name="delete">Delete</string>
+    <string name="one">၁</string>
+    <string name="two">၂</string>
+    <string name="three">၃</string>
+    <string name="four">၄</string>
+    <string name="five">၅</string>
+    <string name="six">၆</string>
+    <string name="seven">၇</string>
+    <string name="eight">၈</string>
+    <string name="nine">၉</string>
+    <string name="zero">၀</string>
 </resources>
